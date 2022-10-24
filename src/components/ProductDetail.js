@@ -37,7 +37,7 @@ const ProductDetail = () => {
       </section>
        <div className="grid place-items-center md:grid-cols-2 max-w-[1140px] mx-auto relative">
 
-            <img src={'../assets/images/${product.loc}'} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto "/>   
+            <img src={product.loc} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto "/>   
 
             <div className="w-full px-6 lg:px-0 flex flex-col">
                 <h6 className="text-black mb-2 leading-7 uppercase text-center md:text-start absolute top-16 md:relative md:top-0 md:self-start self-center "> weight :350G </h6>
@@ -56,9 +56,9 @@ const ProductDetail = () => {
             <h6 className="text-blacl mb-2">Treatment: Washed</h6>
             <h6 className="text-blacl mb-2">Roast Level : Light roast for filter</h6>
             <div className="w-full h-12 md:h-20 border-t border-b mt-10 mb-2 border-gray-600 flex items-center justify-between">
-                <p className="text-[.5rem] font-bold sm:text-lg xs:text-base text-black h-full grid place-items-center font-bold uppercase w-[25%] ">quantity:</p>
+                <p className="text-[.5rem] font-bold sm:text-lg xs:text-base text-black h-full grid place-items-center uppercase w-[25%] ">quantity:</p>
                 <span className="h-full w-[1px] bg-gray-600"></span>
-                <p className="text-[.5rem] font-bold sm:text-lg xs:text-base font-bold text-black h-full grid place-items-center  w-[20%] ">{score}</p>
+                <p className="text-[.5rem] sm:text-lg xs:text-base font-bold text-black h-full grid place-items-center  w-[20%] ">{score}</p>
                 <div className="h-full w-[1px] bg-gray-600"></div>
                 <p className="w-[20%] h-full grid place-items-center border-l">
                   <button onClick={handleAdd} className="text-black h-full w-full grid place-items-center outline-none"> <AiOutlinePlus size={18}/> </button>
@@ -66,7 +66,7 @@ const ProductDetail = () => {
                   <button onClick={handleMinus} className="text-black h-full w-full grid place-items-center outline-none"> <AiOutlineMinus size={18}/> </button>
                 </p>
                 <span className="h-full w-[1px] bg-gray-600"></span>
-                <p className="text-[.5rem] font-bold sm:text-lg xs:text-base text-black h-full grid place-items-center font-bold uppercase w-[35%]">ADD TO CART</p>
+                <p className="text-[.5rem] sm:text-lg xs:text-base text-black h-full grid place-items-center font-bold uppercase w-[35%]">ADD TO CART</p>
             </div>
             <p className="text-center text-gray-600 text-sm">Roasts & ships from our Geneva roastery on Tuesdays</p>
             </div>

@@ -76,11 +76,11 @@ const Shop = () => {
                     <h1 className="text-white text-center md:text-start text-2xl font-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER  </h1>
                     <form className="flex w-full">
                         <input type="text" placeholder="name@gmail.com" className="px-4 w-[70%] border-r-0 bg-transparent text-white py-3 hover:border-black  border" /> 
-                        <p className="border border-l-0 w-[30%] hover:border-black border-gray-300 duration-300 text-yee bg-white hover:bg-black hover:text-yee font-bold text-xs cursor-pointer duration-300 sm:text-base py-3 px-2 flex items-center justify-center"> <span className="hidden md:inline-block">SUBSCRIBE</span> <HiArrowNarrowRight size={20} className="text-yee ml-3 cursor-pointer duration-300 hover:text-yee hover:translate-x-2" /></p>                     
+                        <p className="border border-l-0 w-[30%] hover:border-black border-gray-300 duration-300 text-yee bg-white hover:bg-black hover:text-yee font-bold text-xs cursor-pointer sm:text-base py-3 px-2 flex items-center justify-center"> <span className="hidden md:inline-block">SUBSCRIBE</span> <HiArrowNarrowRight size={20} className="text-yee ml-3 cursor-pointer duration-300 hover:text-yee hover:translate-x-2" /></p>                     
                     </form>
             </div>
 
-            <div className="bg-shopcto py-6 md:py-0 bg-cover flex flex-col items-center justify-center w-full h-full md:py-10">
+            <div className="bg-shopcto py-6 bg-cover flex flex-col items-center justify-center w-full h-full md:py-10">
                 <h1 className="text-white text-sm text-center font-bold mb-2 uppercase">You prefer to buy your coffee in person?</h1>
                 <h1 className="md:px-8 text-white text-xl lg:text-4xl text-center font-bold mb-3 uppercase hover:text-yee duration-200" >just visit one of our shops</h1>
                 <Link to="/cafes/geneva" className="group duration-200 ease-in border hover:border-yee border-gray-300 text-white bg-transparent hover:bg-yee hover:text-white font-bold text-large py-3 px-8 flex items-center justify-center gap-2 uppercase">discover boreal <HiArrowNarrowRight size={20} className="text-yee ml-3 cursor-pointer duration-300 group-hover:text-white group-hover:translate-x-2" /></Link>                        
