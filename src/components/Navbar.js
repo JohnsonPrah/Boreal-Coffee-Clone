@@ -38,8 +38,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className={!scrolled ? ' w-full bg-transparent h-[7rem] bg-gray-100 fixed left-0 right-0 top-0 z-50' : ' z-50 w-full h-7rem] fixed left-0 right-0 top-0 bg-gray-100'} >
-           <h1 className="mx-5 text-center uppercase text-yellow-900 font-bold pt-2">Check out the latest Boreal in Plainpalais - Rond-Point de Plainpalais 6</h1>
+    <nav className={!scrolled ? 'w-full bg-transparent h-[7rem] sm:fixed left-0 right-0 top-0 z-50 static' : 'w-full h-7rem]  bg-gray-100 sm:fixed left-0 right-0 top-0 z-50 static'} >
+           <h1 className=" mx-5 text-center text-base uppercase text-yellow-900 font-bold pt-2">Check out the latest Boreal in Plainpalais - Rond-Point de Plainpalais 6</h1>
           <section className={!scrolled ? 'py-2 xl:py-0 max-w-[1140px] flex items-center justify-between h-[full] border-b border-gray-100 mx-4 lg:mx-auto':'py-2 xl:py-0 max-w-[1140px] mx-4 lg:mx-auto md:mx-8 flex items-center justify-between h-[full] border-b border-gray-100'}>
               
                   <Link to="/" ><img src={!scrolled ? Logo :Logg} alt="logo" className="w-[4.5rem] md:w-[6rem] b" onClick={()=>setToggle(false)} /> </Link>
