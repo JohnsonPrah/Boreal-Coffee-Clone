@@ -14,8 +14,8 @@ const Home = () => {
         <section className="pt-[8rem] bg-home bg-cover md:px-[30px] px-[15px] h-screen w-full grid place-items-center">
             <img src={hommy} alt="hommy" />
             <div className="grid w-full px-6 gap-x-4 md:flex md:items-center md:justify-center">
-                <Link to="/cafes/geneva" className="flex justify-center sm:justify-start font-bold border border-gray-300 hover:border-yee text-gray-300 font-bold text-xs sm:text-base p-3 group flex items-center gap-3 hover:bg-yee hover:text-white"> DISCOVER BOREAL <HiArrowNarrowRight className="group-hover:translate-x-1 duration-200 text-yee group-hover:text-white"/></Link>
-                <Link to="/shop/all" className="flex justify-center sm:justify-start font-bold border border-gray-300 hover:border-yee text-gray-300 font-bold text-xs sm:text-base p-3 group flex items-center gap-3 hover:bg-yee hover:text-white"> VISIT OUR WEBSHOP <HiArrowNarrowRight className="group-hover:translate-x-1 duration-200 text-yee group-hover:text-white"/></Link>
+                <Link to="/cafes/geneva" className=" justify-center sm:justify-start border border-gray-300 hover:border-yee text-gray-300 font-bold text-xs sm:text-base p-3 group flex items-center gap-3 hover:bg-yee hover:text-white"> DISCOVER BOREAL <HiArrowNarrowRight className="group-hover:translate-x-1 duration-200 text-yee group-hover:text-white"/></Link>
+                <Link to="/shop/all" className=" justify-center sm:justify-start font-bold border border-gray-300 hover:border-yee text-gray-300 text-xs sm:text-base p-3 group flex items-center gap-3 hover:bg-yee hover:text-white"> VISIT OUR WEBSHOP <HiArrowNarrowRight className="group-hover:translate-x-1 duration-200 text-yee group-hover:text-white"/></Link>
             </div>
             <img src={arrow} alt="arrow" className="group-hover:translate-x-1w h-[4rem] w-[3.5rem]" />
         </section>
@@ -67,7 +67,7 @@ const Home = () => {
             <img src={homm} alt="homm" className="w-full h-full object-cover hover:cursor-pointer transfoem"/>
         </section>
         
-        <section className="bg-milk bg-cover bg-top py-16 px-5 flex items-center justify-end relative">
+        <section className="bg-milk bg-cover bg-top py-16 px-3 flex items-center justify-end relative">
         <div className="absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,0.8)] z-[1]"> </div>
             <div className="md:w-[55%] z-10">
                 <h1 className="text-xsm text-yee font-bold ">JEBREW</h1>
@@ -79,7 +79,7 @@ const Home = () => {
                     learn how to brew a perfect cup of coffee for your needs and tastes :
                 </p>
                 <div className=" lg:border-t lg:border-b grid lg:grid-cols-2 place-items-center h-[5rem]">
-                    <img src={brew} alt="brew" className="h-[1.4rem] xs:h-[3rem] md:h-3/4 mb-3 object-cover w-full  px-2 h-[10rem]"/>
+                    <img src={brew} alt="brew" className="h-[2rem] xs:h-[3rem] mb-3 object-cover w-full  px-2 md:h-[10rem]"/>
                     <p className="text-yee w-full font-bold text-xs md:text-sm lg:border-l mt-3 md:mt-0 md:pl-8 h-full flex items-center group hover:text-white cursor-pointer duration-300">TEACH HOW TO BREW  <HiArrowNarrowRight size={20} className="group-hover:text-yee group-hover:translate-x-1 text-white ml-3 cursor-pointer duration-300 hover:text-yee hover:translate-x-2" /></p>
                 </div>
             </div>
