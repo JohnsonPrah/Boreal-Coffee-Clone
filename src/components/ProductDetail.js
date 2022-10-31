@@ -6,7 +6,7 @@ import {useParams} from "react-router-dom"
 import Item from "./Item";
 import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineMinus} from "react-icons/ai"
-import lol from "../assets/images/pica.png"
+import lol from "../assets/images/picb.png"
 
 const ProductDetail = () => {
 
