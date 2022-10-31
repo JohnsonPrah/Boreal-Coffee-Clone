@@ -23,10 +23,6 @@ const ProductDetail = () => {
     
     }
 
-    const pics = [ "flask.png","pica.png","picb.png","picc.png","picd.jpg","pice.png","picf.png","picg.png","pich.jpg","pici.png","picj.jpg","pick.jpg","picl.jpg","picm.jpg","pico.png" ]
-    
-    const mypic = pics.map((pic)=>pic === product.loc )
-  
 
     useEffect(()=>{
         const jay = all.filter((j)=>(j.id === parseInt(productId)))
