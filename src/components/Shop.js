@@ -17,20 +17,20 @@ const Shop = () => {
     const choice = "outline-none border-b-[2px] h-full border-b-yee text-yee font-bold cursor-pointer px-2 hover:text-yee  "
     const notChoice = "outline-none text-gray-600 h-full font-bold cursor-pointer px-2 hover:text-yellow-700 "
 
-    useEffect(()=>{
-        if(prod === "all"){navigate('/shop/all')}
-        else if(prod === "beans"){navigate('/shop/beans')}
-        else if(prod === "merchants"){ navigate('/shop/merchants')}
+    useEffect(()=>{     if(prod === "all"){navigate('/shop/all')}
+    else if(prod === "beans"){navigate('/shop/beans')}
+    else if(prod === "merchants"){ navigate('/shop/merchants')}
 
-     },[prod,navigate])
+    },[prod,navigate])
+    
 
-     useEffect(()=>{
-        if(logo === 'all'){setProd('all')}
-        else if(logo === 'beans'){setProd('beans')}
-        else if(logo === 'merchants'){setProd('merchants')}
+     useEffect(()=>{ 
+        if(logo === 'all'){setProd('all');navigate('/shop/all')}
+        else if(logo === 'beans'){setProd('beans');navigate('/shop/beans')}
+        else if(logo === 'merchants'){setProd('merchants');navigate('/shop/merchants')}
 
         return ()=>{setProd('')}
-     },[logo])
+     },[logo,navigate])
     
 
   return (

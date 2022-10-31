@@ -6,7 +6,7 @@ import {useParams} from "react-router-dom"
 import Item from "./Item";
 import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineMinus} from "react-icons/ai"
-
+import lol from "../assets/images/pica.png"
 
 const ProductDetail = () => {
 
@@ -22,7 +22,12 @@ const ProductDetail = () => {
       if(score > 0)setScore((prev) => prev - 1)
     
     }
+
+    const pics = [ "flask.png","pica.png","picb.png","picc.png","picd.jpg","pice.png","picf.png","picg.png","pich.jpg","pici.png","picj.jpg","pick.jpg","picl.jpg","picm.jpg","pico.png" ]
+    
+    const mypic = pics.map((pic)=>pic === product.loc )
   
+
     useEffect(()=>{
         const jay = all.filter((j)=>(j.id === parseInt(productId)))
         const jayt = jay[0]
@@ -37,8 +42,9 @@ const ProductDetail = () => {
       </section>
        <div className="grid place-items-center md:grid-cols-2 max-w-[1140px] mx-auto relative">
 
-            <img src={product.loc} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto "/>   
-
+             
+            <img src={lol} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto" />
+                    
             <div className="w-full px-6 lg:px-0 flex flex-col">
                 <h6 className="text-black mb-2 leading-7 uppercase text-center md:text-start absolute top-16 md:relative md:top-0 md:self-start self-center "> weight :350G </h6>
                 <h6 className="text-black mb-2 font-bold text-2xl md:text-3xl lg:text-5xl uppercase text-center md:text-start absolute top-0 md:relative md:top-0 md:self-start self-center"> {product.title} </h6>
