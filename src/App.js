@@ -1,13 +1,13 @@
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Catering from "./components/Catering";
-import Contact from "./components/Contact";
-import Branch from "./components/Branch";
-import Shop from "./components/Shop";
-import Loc  from "./components/Loc";
-import Detail  from "./components/ProductDetail";
+import About from "./pages/About";
+import Catering from "./pages/Catering";
+import Contact from "./pages/Contact";
+import Branch from "./pages/Branch";
+import Shop from "./pages/Shop";
+import Loc  from "./pages/Loc";
+import Detail  from "./pages/ProductDetail";
 import { Route,Routes } from "react-router-dom"
 
 

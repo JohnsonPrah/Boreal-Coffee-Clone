@@ -1,9 +1,9 @@
 import React from "react";
-import {all} from "./products"
+import {all} from "../components/products"
 import {FaHandsHelping} from "react-icons/fa"
 import { useState,useEffect } from "react";
 import {useParams} from "react-router-dom"
-import Item from "./Item";
+import Item from "../components/Item";
 import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineMinus} from "react-icons/ai"
 import lol from "../assets/images/picb.png"
@@ -39,7 +39,7 @@ const ProductDetail = () => {
        <div className="grid place-items-center md:grid-cols-2 max-w-[1140px] mx-auto relative">
 
              
-            <img src={lol} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto" />
+            <img src={lol} alt={product.title} className="bg-transparent uppercase object-cover h-2/3 mt-[10rem] md:mt-0 w-2/3 md:w-auto mb-7 sm:mb-0" />
                     
             <div className="w-full px-6 lg:px-0 flex flex-col">
                 <h6 className="text-black mb-2 leading-7 uppercase text-center md:text-start absolute top-16 md:relative md:top-0 md:self-start self-center "> weight :350G </h6>

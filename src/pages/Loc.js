@@ -5,7 +5,7 @@ import mapp from "../assets/images/mapp.png"
 import scroll from "../assets/images/scroll.png"
 import { Link } from "react-router-dom";
 import {HiArrowNarrowRight} from "react-icons/hi"
-import {gen,zu} from "./LocationData"
+import {gen,zu} from "../components/LocationData"
 import { useNavigate,useParams } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ const Loc = () => {
 
   return (
      <div className="w-full">
-         <section className="w-full min-h-screen bg-zurich bg-cover bg-center flex flex-col items-center justify-center pt-[18rem] md:pt-[13rem] bg-center">
+         <section className="w-full min-h-screen bg-zurich bg-cover flex flex-col items-center justify-center pt-[18rem] md:pt-[13rem] bg-center">
             <img src={cities === 'geneva' ? map : mapp} alt="map" className="w-1/2 mx-auto hidden md:block"/>
             <h1 className="text-yee mb-2 text-lg text-center uppercase font-bold">choose between our locations</h1>
             <div className="flex items-center justify-center mb-[12rem] md:mb-0  flex-wrap sm:flex-nowrap">

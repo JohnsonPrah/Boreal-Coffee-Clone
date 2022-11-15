@@ -1,6 +1,6 @@
 import React from "react";
-import { mont,stand,likon,taller,plain} from "./branchesData"
-import BranchItem from "./BranchItem";
+import { mont,stand,likon,taller,plain} from "../components/branchesData"
+import BranchItem from "../components/BranchItem";
 import { useParams } from "react-router-dom";
 
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Item from "./Item"
+import Item from "../components/Item"
 import {HiArrowNarrowRight} from "react-icons/hi"
-import {all,beans,mant} from "./products" 
+import {all,beans,mant} from "../components/products" 
 import {useState,useEffect} from "react"
 import { useParams,useNavigate,Link} from "react-router-dom";
 
